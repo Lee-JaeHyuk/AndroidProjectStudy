@@ -1,0 +1,2 @@
+rootProject.name='Movie_database'
+include ':app'

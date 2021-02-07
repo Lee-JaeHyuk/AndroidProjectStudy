@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+    <TableLayout
+        android:id="@+id/layoutTable"
+        android:layout_below="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight ="1">
+        <TableRow
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick1"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick2"
+                android:text="2"></Button>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick3"
+                android:text="3"></Button>
+
+            <Button
+                android:id="@+id/button_plus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick_plus"
+                android:text="+"></Button>
+        </TableRow>
+        <TableRow
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick4"
+                android:text="4"></Button>
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick5"
+                android:text="5"></Button>
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick6"
+                android:text="6"></Button>
+
+            <Button
+                android:id="@+id/button_minus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick_minus"
+                android:text="-"></Button>
+        </TableRow>
+        <TableRow
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick7"
+                android:text="7"></Button>
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick8"
+                android:text="8"></Button>
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick9"
+                android:text="9"></Button>
+
+            <Button
+                android:id="@+id/button_mul"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick_mul"
+                android:text="*"></Button>
+        </TableRow>
+        <TableRow
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/buttonnull"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:text="">
+            </Button>
+
+            <Button
+                android:id="@+id/button0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick0"
+                android:text="0"></Button>
+
+            <Button
+                android:id="@+id/button_clear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick_clear"
+                android:text="clear"></Button>
+
+            <Button
+                android:id="@+id/button_div"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick_div"
+                android:text="/"></Button>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/bittonDiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutTable"
+        android:onClick="onClick_ok"
+        android:text="ok"></Button>
+</RelativeLayout>

@@ -1,0 +1,2 @@
+rootProject.name='DOM_XML_parsing'
+include ':app'

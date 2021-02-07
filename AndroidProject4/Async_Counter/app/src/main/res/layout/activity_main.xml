@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_url"
+        android:inputType="textUri"
+        android:text="https://www.gstatic.com/webp/gallery3/1.png"
+        tools:context=".MainActivity">
+    </EditText>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:text="download"
+        tools:context=".MainActivity">
+    </Button>
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="223dp"
+        android:id="@+id/imageView"
+        tools:context=".MainActivity">
+    </ImageView>
+
+
+</LinearLayout>
