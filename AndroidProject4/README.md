@@ -1,8 +1,7 @@
 # AndroidProject4
 
 ## **1. ProgressBarThread**  
--  XML 파트에서 Progressbar를 선언하고 Main_Activity에서 id를 찾아와서 수행시키는 flow 이
-다.  
+-  XML 파트에서 Progressbar를 선언하고 Main_Activity에서 id를 찾아와서 수행시키는 flow 이다.  
 - 중간에 Thread를 새롭게 생성하여 UI 부분이 아닌 작업 Tread로 run 하였다.  
 - Sleep 함수를 통해 1초마다 Progressbar 상태를 1씩 증가시켰다.  
 - post() method를 통해 큐에 집어 넣어 Main Thread에게 결과물을 넘겼다.  
